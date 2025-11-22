@@ -5,7 +5,7 @@
 
 ## 1. 整体架构总图
 
-![GSOP-2025 整体架构总图](https://raw.githubusercontent.com/VihaanMukeshModi/hq_next_saas/refs/heads/main/gsop-2025-architecture.svg)
+![GSOP-2025 整体架构总图](./gsop-2025-architecture.svg)
 
 ## 2. 技术栈总表（3000 租户月成本 ≈ $1800）
 
@@ -96,5 +96,6 @@ r2://saas-static-bucket/
 - 路径统一为 /private/xxx
 - Workers 自动把路径重写为 /private/tenant_xxx/xxx 并校验 JWT
 - 后端也可直接返回 R2 预签名 URL（30 分钟有效）
+
 
 
